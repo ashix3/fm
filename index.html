@@ -15,6 +15,22 @@
         <form action="https://hotel-feedback.freecodecamp.org" method="POST">
             <fieldset>
                 <legend>Informacje osobiste</legend>
+                <label for="full-name">Imię i nazwisko (Wymagane):</label>
+                <input type="text" id="full-name" name="name" placeholder="np. Jan Kowalski" required>
+                
+                <label for="email">Adres email (wymagane)</label>
+                <input type="email" name="email" id="email" placeholder="jankowalski@gmail.com" required>
+
+                <label for="age">Wiek (opcjonalne)</label>
+                <input type="number" name="age" id="age" min="3" max="100">
+
+                <fieldset>
+                    <legend>Czy to była twoja pierwsza wizyta w naszym hotelu?</legend>
+                    <label for="yes-option">Tak</label>
+                    <input type="radio" name="hotel-stay" id="yes-option">
+                    <label for="no-option">Nie</label>
+                    <input type="radio" name="hotel-stay" id="no-option">
+                </fieldset>
             </fieldset>
         </form>
     </main>
